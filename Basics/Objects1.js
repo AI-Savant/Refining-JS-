@@ -121,3 +121,19 @@ console.log(typeof Object.values(Details))
 
 //CHECKING If SOMETHING IS IN THE OBJECT OR NOT :-
 console.log(Details.hasOwnProperty("White"))  //Will give Boolean Output.
+
+
+
+
+//Concept of DE-STRUCTURING of Values
+const P1 = {
+    Name : "Bhavesh Rajpurohit",
+    Age : 21,
+    Expertise : "AI - Blockchain Developer",
+}
+
+// console.log(P1.Expertise)  - Let's say ki aapko baar baar value ko access karna hai then are you going to use this long statement again and again?? Instead, You will use this method :- 
+const {Expertise: Pehchaan} = P1   //Here with this method, we can now use the value without getting overwhelmed by writing whole long thing again and again.
+
+console.log(Pehchaan) //Displayed the result
+
